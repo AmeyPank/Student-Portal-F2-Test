@@ -10,23 +10,38 @@
 </head>
 
 <body>
+  <!-- heading -->
 
-    <nav class="navbar navbar-dark bg-dark">
-        <h1 style="color: slategray;">Student Portal</h1>  
+      <nav class="navbar navbar-dark bg-dark" >
+        <h1 id="heading" style="color: white;margin:10px;">Student Portal</h1>  
       </nav>
 
 
-
-    <div class="search" >
+<!-- Search bar  -->
+    <div class="search" id="searchbar" >
     <nav class="navbar bg-light" >
         <div class="container-fluid">
-          <form class="d-flex" role="search" >
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <form class="d-flex" role="search" style="width: 1600px; height: 60px;">
+            <input class="form-control me-2" type="search" id="search-placeholder" placeholder="Search" aria-label="Search" >
+            <button class="btn btn-outline-dark" type="submit" style="width: 400px;">Search</button>
           </form>
         </div>
       </nav>
     </div>
+  <!-- Sorting contents -->
+    <div class="btn">
+      <button type="button" class="btn btn-dark" style="width: 250px;height: 60px; font-size: 25px"id="az">Sort A->Z</button>
+      <button type="button" class="btn btn-dark" style="width: 250px;height: 60px; font-size: 25px"id="za">Sort Z->A</button>
+      <button type="button" class="btn btn-dark" style="width: 250px;height: 60px; font-size: 25px"id="marks">Sort By Marks</button>
+      <button type="button" class="btn btn-dark" style="width: 250px;height: 60px; font-size: 25px"id="passing">Sort By Passing</button>
+      <button type="button" class="btn btn-dark" style="width: 250px;height: 60px; font-size: 25px"id="class">Sort By Class</button>
+      <button type="button" class="btn btn-dark" style="width: 250px;height: 60px; font-size: 25px"id="gender">Sort By Gender</button>
+    </div>
+    
+    <table class="table table-bordered border-dark" id="display_json_data" ></table>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
